@@ -1,97 +1,60 @@
-# Preprint Review Metadata Modelling
+# Preprint Review Metadata
 
-##  **Inputs**
+A shared data model and documentation for preprint review metadata, aiming to establish common standards and protocols for consistent metadata representation across platforms.
 
-### PID of preprint reviewed (essential 🟢)
+## Overview
 
-#### Description/Meaning
+This repository provides a standardised approach to preprint review metadata, including:
+- Common data models and schemas
+- Recommended metadata elements and their definitions
+- Implementation guidelines for different platforms
+- Examples and best practices
 
-The persistent identifier of the preprint eg. ([doi.org](http://doi.org)) formatted as \`https://doi.org/10.1101/2024.02.28.24303482\`
+## Purpose
 
-#### **🤖**Examples
+The goal of this project is to:
+- Reduce barriers to adopting common metadata standards
+- Increase visibility and consistency of preprint reviews
+- Support better recognition and reward for reviewers
+- Enable interoperability between different platforms and systems
 
-*code example of fields the metadata can be mapped to and how to retrieve an example*
+## Documentation Structure
 
-##### Crossref
+The documentation is organized into several key sections:
+- [Metadata Elements](docs/PID-of-preprint-reviewed.md) - Detailed specifications of required and optional metadata fields
+- Implementation Guides - Platform-specific guidance for implementing the metadata model
+- Examples - Real-world examples of metadata implementation
 
-###### ***Deposit***
+## Getting Started
 
+### Local Development
+
+To run the documentation site locally:
+
+1. Install dependencies:
+```bash
+bundle install
 ```
 
-<inter_work_relation relationship-type="isReviewOf" identifier-type="doi">10.1186/s12895-016-0051-4</inter_work_relation>
-
+2. Start the Jekyll server:
+```bash
+bundle exec jekyll serve
 ```
 
-See [Peer reviews markup guide](https://www.crossref.org/documentation/schema-library/markup-guide-record-types/peer-reviews/#00077)
+3. View the site at `http://localhost:4000`
 
-###### ***Retrieval***
+## Contributing
 
-```
-{'is-review-of': [
-{'asserted-by': 'subject',
-'id': '10.7554/eLife.91327.4',
-'id-type': 'doi'
-}
-]}
-```
+TBD
 
-##### DataCite ***Deposit***
+## License
 
-| relatedIdentifiers: \[{relationType: "Reviews",relatedIdentifier: "10.12688/verixiv.77.3",relatedIdentifierType: "DOI"}\], |
-| :---- |
+This project is licensed under the [MIT License](LICENSE).
 
-#####  ***Retrieval***
+## Contact
 
-```
+For questions or suggestions, please open an issue in this repository.
 
-https://api.datacite.org/dois/10.21956/verixiv.511.r193
+## Acknowledgments
 
-JSON:
-
-relatedIdentifiers: [
-{
-relationType: "Reviews",
-relatedIdentifier: "10.12688/verixiv.77.3",
-relatedIdentifierType: "DOI"
-}
-],
-
-XML:
-
-<relatedIdentifiers>
-    <relatedIdentifier relatedIdentifierType="DOI" relationType="Reviews">10.12688/verixiv.77.3</relatedIdentifier>
-  </relatedIdentifiers>
-
-```
-
-##### DocMaps
-
-A field “doi” on the input of the first step (see [full example](https://data-hub-api.elifesciences.org/enhanced-preprints/docmaps/v2/by-publisher/elife/get-by-manuscript-id?manuscript_id=86824)).
-
-```
-{
-  ...
-  "steps": {    "_:b0": {      "inputs": [{
-        "type": "preprint",
-        "doi": "10.1101/2022.05.16.492226",
-        ...
-     }
-    }
-  }}
-```
-
-#### 🙏Who is currently depositing/retrieving this metadata and can help others? 
-
-| Organisation and contact email | Workflow example |
-| :---- | :---- |
-| Copernicus GmbH | [5\. Open Research platform](https://osf.io/preprints/metaarxiv/yu4sm_v1)  |
-| eLife Sciences Publications, | [6\. Publish-Review-Curate platform](https://osf.io/preprints/metaarxiv/yu4sm_v1) |
-| Qeios | [1\. Preprint server with an integrated review option](https://osf.io/preprints/metaarxiv/yu4sm_v1) |
-| Microbiology Society | [5\. Open Research platform](https://osf.io/preprints/metaarxiv/yu4sm_v1) |
-| Review Commons | [6\. Publish-Review-Curate platform](https://osf.io/preprints/metaarxiv/yu4sm_v1) |
-| ScienceOpen | [1\. Preprint server with an integrated review option](https://osf.io/preprints/metaarxiv/yu4sm_v1) |
-| RR/ID | [3\. Preprint review platform registering DOIs](https://osf.io/preprints/metaarxiv/yu4sm_v1) |
-| Peer Community In | [3\. Preprint review platform registering DOIs](https://osf.io/preprints/metaarxiv/yu4sm_v1) |
-| F1000, michael.evans@f1000.com | [5\. Open Research platform](https://osf.io/preprints/metaarxiv/yu4sm_v1) |
-
-#### 💪Actions/updates from the community 
+This project is made possible through the collaboration of various organizations in the academic publishing space
