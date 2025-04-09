@@ -12,7 +12,7 @@ This repository provides a standardised approach to preprint review metadata, in
 
 ## Purpose
 
-The goal of this project is to:
+The goals of this project are to:
 - Reduce barriers to adopting common metadata standards
 - Increase visibility and consistency of preprint reviews
 - Support better recognition and reward for reviewers
@@ -20,10 +20,10 @@ The goal of this project is to:
 
 ## Documentation Structure
 
-The documentation is organized into several key sections:
-- [Metadata Elements](docs/PID-of-preprint-reviewed.md) - Detailed specifications of required and optional metadata fields
-- Implementation Guides - Platform-specific guidance for implementing the metadata model
-- Examples - Real-world examples of metadata implementation
+The documentation is organised in `/docs` as follows:
+- A page for each essential metadata element
+    - Real world deposit and retrieval examples using Crossref, Datacite and DocMaps
+    - Community actions and discussion on implementing the metadata
 
 ## Getting Started
 
@@ -42,6 +42,21 @@ bundle exec jekyll serve
 ```
 
 3. View the site at `http://localhost:4000`
+
+## Comments and Discussion
+
+This documentation uses [Giscus](https://giscus.app/) for comments and discussions. Giscus is a comments system powered by GitHub Discussions, which means:
+
+- Comments are stored in your repository's Discussions
+- Users need a GitHub account to comment
+- Comments are moderated through GitHub's interface
+- Discussions are searchable and can be referenced in issues
+
+Each documentation page has a comments section at the bottom where you can:
+- Ask questions about the content
+- Share implementation experiences
+- Suggest improvements or clarifications
+- Discuss metadata standards and practices
 
 ## Contributing
 
