@@ -31,4 +31,6 @@ TBD
 
 ### 💪Actions/updates from the community 
 
-TBD 
+The comments section provides a way for the preprint review community to discuss approaches to implementation of the metadata. Here you can show how you are depositing and using the metadata and provide updates.
+
+{% include giscus.html %} 

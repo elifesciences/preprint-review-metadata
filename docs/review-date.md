@@ -79,3 +79,7 @@ See [full example](https://data-hub-api.elifesciences.org/enhanced-preprints/doc
 | Peer Community In | [3\. Preprint review platform registering DOIs](https://osf.io/preprints/metaarxiv/yu4sm_v1) |
 
 ### 💪Actions/updates from the community 
+
+The comments section provides a way for the preprint review community to discuss approaches to implementation of the metadata. Here you can show how you are depositing and using the metadata and provide updates.
+
+{% include giscus.html %}

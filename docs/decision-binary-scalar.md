@@ -56,6 +56,10 @@ Not currently supported
 
 ### 💪Actions/updates from the community
 
+The comments section provides a way for the preprint review community to discuss approaches to implementation of the metadata. Here you can show how you are depositing and using the metadata and provide updates.
+
+{% include giscus.html %}
+
 #### F1000
 
 The full text XML of any preprint Peer Reviews are incorporated into the Full Text XML of the preprints they review. The reviews are included as \<sub-articles\> with an @article-type attribute value of "reviewer-report".
