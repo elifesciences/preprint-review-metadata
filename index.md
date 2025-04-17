@@ -25,13 +25,23 @@ Contributors are encouraged to make edits to the pages.
 
 ## Contributors
 
-<div class="contributors">
-{% for contributor in site.github.contributors %}
-  <div class="contributor">
-    <a href="https://github.com/{{ contributor.login }}" target="_blank" rel="noopener noreferrer">
-      <img src="{{ contributor.avatar_url }}" alt="{{ contributor.login }}" width="50" height="50" class="contributor-avatar">
-      <span class="contributor-name">{{ contributor.login }}</span>
-    </a>
-  </div>
-{% endfor %}
-</div>
+<div id="contributors" class="contributors"></div>
+
+<script>
+  fetch('https://api.github.com/repos/elifesciences/preprint-review-metadata/contributors')
+    .then(res => res.json())
+    .then(data => {
+      const container = document.getElementById('contributors');
+      data.forEach(contributor => {
+        const div = document.createElement('div');
+        div.className = 'contributor';
+        div.innerHTML = `
+          <a href="${contributor.html_url}" target="_blank" rel="noopener noreferrer">
+            <img src="${contributor.avatar_url}" alt="${contributor.login}" width="50" height="50" class="contributor-avatar" style="border-radius: 50%;">
+            <span class="contributor-name">${contributor.login}</span>
+          </a>
+        `;
+        container.appendChild(div);
+      });
+    });
+</script>
