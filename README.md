@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/956511465.svg)](https://doi.org/10.5281/zenodo.15236642)
+
 # Preprint Review Metadata
 
 A shared data model and documentation for preprint review metadata, aiming to establish common standards and protocols for consistent metadata representation across platforms.
