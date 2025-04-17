@@ -3,31 +3,31 @@ title: Who selected reviewers
 nav_order: 12
 ---
 
-# Who selected reviewers (TBD)
+# Who selected reviewers (essential 🔴)
 
 ### Description/Meaning
 
-TBD
+For example does the reviewer self-nominate or are they selected by and editor or co-ordinator
 
 ### **🤖**Examples
 
-TBD
-
 #### Crossref
 
-TBD
+Not currently supported
 
 #### DataCite
 
-TBD
+Not currently supported
 
 #### DocMaps
 
-TBD
+Not currently supported
 
 ### 🙏Who is currently depositing/retrieving this metadata and can help others? 
 
-TBD
+| Organisation and contact email | Workflow example |
+| :---- | :---- |
+|Sciety||
 
 ### 💪Actions/updates from the community 
 

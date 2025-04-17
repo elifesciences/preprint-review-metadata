@@ -11,23 +11,33 @@ TBD
 
 ### **🤖**Examples
 
-TBD
-
 #### Crossref
 
-TBD
+```
+Contributor / reviewer (allows <anonymous/>)
+```
 
 #### DataCite
 
-TBD
+```
+creator / name / given name / family name
+```
 
 #### DocMaps
 
-TBD
+```
+participants[].actor.name
+```
 
 ### 🙏Who is currently depositing/retrieving this metadata and can help others? 
 
-TBD
+| Organisation and contact email | Workflow example |
+| :---- | :---- |
+| Qeios | [1\. Preprint server with an integrated review option](https://osf.io/preprints/metaarxiv/yu4sm_v1) |
+| Microbiology Society | [5\. Open Research platform](https://osf.io/preprints/metaarxiv/yu4sm_v1) |
+| ScienceOpen | [1\. Preprint server with an integrated review option](https://osf.io/preprints/metaarxiv/yu4sm_v1) |
+| RR/ID | [3\. Preprint review platform registering DOIs](https://osf.io/preprints/metaarxiv/yu4sm_v1) |
+| Peer Community In | [3\. Preprint review platform registering DOIs](https://osf.io/preprints/metaarxiv/yu4sm_v1) |
 
 ### 💪Actions/updates from the community 
 
