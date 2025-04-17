@@ -5,6 +5,7 @@ nav_order: 1
 ---
 
 # Preprint Review Metadata Modelling
+[![DOI](https://zenodo.org/badge/956511465.svg)](https://doi.org/10.5281/zenodo.15236642)
 
 ## 🤔 What am I looking at?
 This documentation provides examples of how and where Preprint Review Metadata is currently deposited and how to retrieve and  share it. It is organised as fields that are inputs to or outputs from the process. 
